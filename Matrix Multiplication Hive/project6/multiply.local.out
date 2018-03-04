@@ -1,0 +1,65 @@
+which: no hbase in (/oasis/projects/nsf/uot143/fegaras/apache-hive-2.1.0-bin/bin:/opt/hadoop/2.6.0/sbin:/opt/hadoop/contrib/myHadoop/bin:/opt/hadoop/2.6.0/bin:/opt/gnu/gcc/bin:/opt/gnu/bin:/opt/mvapich2/intel/ib/bin:/opt/intel/composer_xe_2013_sp1.2.144/bin/intel64:/opt/intel/composer_xe_2013_sp1.2.144/mpirt/bin/intel64:/opt/intel/composer_xe_2013_sp1.2.144/debugger/gdb/intel64_mic/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/ibutils/bin:/usr/java/latest/bin:/opt/pdsh/bin:/opt/rocks/bin:/opt/rocks/sbin:/opt/sdsc/bin:/opt/sdsc/sbin:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/bin:/home/skamthe/bin)
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/oasis/projects/nsf/uot143/fegaras/apache-hive-2.1.0-bin/lib/log4j-slf4j-impl-2.4.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/oasis/projects/nsf/uot143/fegaras/apache-hive-2.1.0-bin/lib/hive-common-2.1.0.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 2.049 seconds
+OK
+Time taken: 0.063 seconds
+OK
+Time taken: 0.284 seconds
+OK
+Time taken: 0.045 seconds
+Loading data to table default.m_matrix_table
+OK
+Time taken: 0.162 seconds
+Loading data to table default.n_matrix_table
+OK
+Time taken: 0.097 seconds
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
+Query ID = skamthe_20171130195951_9228f2ec-866a-4d63-ae72-d3e500a41bb8
+Total jobs = 2
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/oasis/projects/nsf/uot143/fegaras/apache-hive-2.1.0-bin/lib/log4j-slf4j-impl-2.4.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+2017-11-30 19:59:59	Starting to launch local task to process map join;	maximum memory = 514850816
+2017-11-30 19:59:59	Dump the side-table for tag: 1 with group count: 3 into file: file:/tmp/skamthe/4ad23ab6-6259-4288-86af-e642709b9cac/hive_2017-11-30_19-59-54_261_765983564366581326-1/-local-10006/HashTable-Stage-2/MapJoin-mapfile01--.hashtable
+2017-11-30 20:00:00	Uploaded 1 File to: file:/tmp/skamthe/4ad23ab6-6259-4288-86af-e642709b9cac/hive_2017-11-30_19-59-54_261_765983564366581326-1/-local-10006/HashTable-Stage-2/MapJoin-mapfile01--.hashtable (414 bytes)
+2017-11-30 20:00:00	End of local task; Time Taken: 0.444 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Job running in-process (local Hadoop)
+2017-11-30 20:00:02,122 Stage-2 map = 100%,  reduce = 100%
+Ended Job = job_local115421048_0001
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Job running in-process (local Hadoop)
+2017-11-30 20:00:03,633 Stage-3 map = 100%,  reduce = 100%
+Ended Job = job_local262274579_0002
+MapReduce Jobs Launched: 
+Stage-Stage-2:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Stage-Stage-3:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+12	15.5
+Time taken: 9.376 seconds, Fetched: 1 row(s)

@@ -1,0 +1,500 @@
+myHadoop: Setting MH_IPOIB_TRANSFORM='s/\([^.]*\).*$/\1.ibnet/' from myhadoop.conf
+myHadoop: Setting MH_SCRATCH_DIR=/scratch/$USER/$SLURM_JOBID from myhadoop.conf
+myHadoop: Using HADOOP_HOME=/opt/hadoop/2.6.0
+myHadoop: Using MH_SCRATCH_DIR=/scratch/skamthe/12930841
+myHadoop: Using JAVA_HOME=/usr/java/latest
+myHadoop: Generating Hadoop configuration in directory in /home/skamthe/cometcluster...
+myHadoop: Backing up old config dir to /home/skamthe/cometcluster.13...
+`/home/skamthe/cometcluster' -> `/home/skamthe/cometcluster.13'
+myHadoop: Designating comet-29-55.ibnet as master node (namenode, secondary namenode, and jobtracker)
+myHadoop: The following nodes will be slaves (datanode, tasktracer):
+comet-29-55.ibnet
+comet-29-56.ibnet
+comet-29-57.ibnet
+17/11/28 21:21:49 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = comet-29-55.sdsc.edu/198.202.117.240
+STARTUP_MSG:   args = [-format]
+STARTUP_MSG:   version = 2.6.0
+STARTUP_MSG:   classpath = /home/skamthe/cometcluster:/opt/hadoop/2.6.0/share/hadoop/common/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-auth-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-net-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-configuration-1.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-recipes-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpcore-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/curator-framework-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-digester-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsch-0.1.42.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jasper-compiler-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jets3t-0.9.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/httpclient-4.2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/mockito-all-1.8.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-api-1.7.5.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/common/hadoop-common-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/htrace-core-3.0.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xml-apis-1.3.04.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-el-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jasper-runtime-5.5.23.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/xercesImpl-2.9.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jsp-api-2.1.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-nfs-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/hdfs/hadoop-hdfs-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jsr305-1.3.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-lang-2.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jettison-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guava-11.0.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/activation-1.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-client-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-cli-1.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-codec-1.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/servlet-api-2.5.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jline-0.9.94.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jersey-json-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-httpclient-3.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/commons-collections-3.2.1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-client-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-tests-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-registry-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/yarn/hadoop-yarn-api-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hadoop-annotations-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/guice-3.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/asm-3.2.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/xz-1.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/lib/javax.inject-1.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0-tests.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.6.0.jar:/opt/hadoop/2.6.0/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.6.0.jar:/opt/hadoop/2.6.0/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r e3496499ecb8d220fba99dc5ed4c99c8f9e33bb1; compiled by 'jenkins' on 2014-11-13T21:10Z
+STARTUP_MSG:   java = 1.8.0_60
+************************************************************/
+17/11/28 21:21:49 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+17/11/28 21:21:49 INFO namenode.NameNode: createNameNode [-format]
+17/11/28 21:21:50 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/11/28 21:21:50 WARN common.Util: Path /scratch/skamthe/12930841/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+17/11/28 21:21:50 WARN common.Util: Path /scratch/skamthe/12930841/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+Formatting using clusterid: CID-01ec598d-6485-4347-b785-d4043937fd5b
+17/11/28 21:21:50 INFO namenode.FSNamesystem: No KeyProvider found.
+17/11/28 21:21:50 INFO namenode.FSNamesystem: fsLock is fair:true
+17/11/28 21:21:50 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+17/11/28 21:21:50 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+17/11/28 21:21:50 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+17/11/28 21:21:50 INFO blockmanagement.BlockManager: The block deletion will start around 2017 Nov 28 21:21:50
+17/11/28 21:21:50 INFO util.GSet: Computing capacity for map BlocksMap
+17/11/28 21:21:50 INFO util.GSet: VM type       = 64-bit
+17/11/28 21:21:50 INFO util.GSet: 2.0% max memory 958.5 MB = 19.2 MB
+17/11/28 21:21:50 INFO util.GSet: capacity      = 2^21 = 2097152 entries
+17/11/28 21:21:50 INFO blockmanagement.BlockManager: dfs.block.access.token.enable=false
+17/11/28 21:21:50 INFO blockmanagement.BlockManager: defaultReplication         = 3
+17/11/28 21:21:50 INFO blockmanagement.BlockManager: maxReplication             = 512
+17/11/28 21:21:50 INFO blockmanagement.BlockManager: minReplication             = 1
+17/11/28 21:21:50 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+17/11/28 21:21:50 INFO blockmanagement.BlockManager: shouldCheckForEnoughRacks  = false
+17/11/28 21:21:50 INFO blockmanagement.BlockManager: replicationRecheckInterval = 3000
+17/11/28 21:21:50 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+17/11/28 21:21:50 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+17/11/28 21:21:50 INFO namenode.FSNamesystem: fsOwner             = skamthe (auth:SIMPLE)
+17/11/28 21:21:50 INFO namenode.FSNamesystem: supergroup          = supergroup
+17/11/28 21:21:50 INFO namenode.FSNamesystem: isPermissionEnabled = true
+17/11/28 21:21:50 INFO namenode.FSNamesystem: HA Enabled: false
+17/11/28 21:21:50 INFO namenode.FSNamesystem: Append Enabled: true
+17/11/28 21:21:50 INFO util.GSet: Computing capacity for map INodeMap
+17/11/28 21:21:50 INFO util.GSet: VM type       = 64-bit
+17/11/28 21:21:50 INFO util.GSet: 1.0% max memory 958.5 MB = 9.6 MB
+17/11/28 21:21:50 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+17/11/28 21:21:50 INFO namenode.NameNode: Caching file names occuring more than 10 times
+17/11/28 21:21:50 INFO util.GSet: Computing capacity for map cachedBlocks
+17/11/28 21:21:50 INFO util.GSet: VM type       = 64-bit
+17/11/28 21:21:50 INFO util.GSet: 0.25% max memory 958.5 MB = 2.4 MB
+17/11/28 21:21:50 INFO util.GSet: capacity      = 2^18 = 262144 entries
+17/11/28 21:21:50 INFO namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+17/11/28 21:21:50 INFO namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+17/11/28 21:21:50 INFO namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+17/11/28 21:21:50 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+17/11/28 21:21:50 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+17/11/28 21:21:50 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+17/11/28 21:21:50 INFO util.GSet: VM type       = 64-bit
+17/11/28 21:21:50 INFO util.GSet: 0.029999999329447746% max memory 958.5 MB = 294.5 KB
+17/11/28 21:21:50 INFO util.GSet: capacity      = 2^15 = 32768 entries
+17/11/28 21:21:50 INFO namenode.NNConf: ACLs enabled? false
+17/11/28 21:21:50 INFO namenode.NNConf: XAttrs enabled? true
+17/11/28 21:21:50 INFO namenode.NNConf: Maximum size of an xattr: 16384
+17/11/28 21:21:50 INFO namenode.FSImage: Allocated new BlockPoolId: BP-34630160-198.202.117.240-1511932910550
+17/11/28 21:21:50 INFO common.Storage: Storage directory /scratch/skamthe/12930841/namenode_data has been successfully formatted.
+17/11/28 21:21:50 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+17/11/28 21:21:50 INFO util.ExitUtil: Exiting with status 0
+17/11/28 21:21:50 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at comet-29-55.sdsc.edu/198.202.117.240
+************************************************************/
+17/11/28 21:21:51 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Starting namenodes on [comet-29-55.ibnet]
+comet-29-55.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-55.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-55.ibnet: starting namenode, logging to /scratch/skamthe/12930841/logs/hadoop-skamthe-namenode-comet-29-55.sdsc.edu.out
+comet-29-55.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-55.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-55.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-55.ibnet: starting datanode, logging to /scratch/skamthe/12930841/logs/hadoop-skamthe-datanode-comet-29-55.sdsc.edu.out
+comet-29-55.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-57.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-57.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-57.ibnet: starting datanode, logging to /scratch/skamthe/12930841/logs/hadoop-skamthe-datanode-comet-29-57.sdsc.edu.out
+comet-29-57.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-56.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-56.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-56.ibnet: starting datanode, logging to /scratch/skamthe/12930841/logs/hadoop-skamthe-datanode-comet-29-56.sdsc.edu.out
+comet-29-56.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+Starting secondary namenodes [comet-29-55.ibnet]
+comet-29-55.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-55.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-55.ibnet: starting secondarynamenode, logging to /scratch/skamthe/12930841/logs/hadoop-skamthe-secondarynamenode-comet-29-55.sdsc.edu.out
+comet-29-55.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+17/11/28 21:22:07 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+starting yarn daemons
+starting resourcemanager, logging to /scratch/skamthe/12930841/logs/yarn-skamthe-resourcemanager-comet-29-55.out
+comet-29-56.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-56.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-56.ibnet: starting nodemanager, logging to /scratch/skamthe/12930841/logs/yarn-skamthe-nodemanager-comet-29-56.sdsc.edu.out
+comet-29-56.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-55.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-55.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-55.ibnet: starting nodemanager, logging to /scratch/skamthe/12930841/logs/yarn-skamthe-nodemanager-comet-29-55.sdsc.edu.out
+comet-29-55.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-57.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-57.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-57.ibnet: starting nodemanager, logging to /scratch/skamthe/12930841/logs/yarn-skamthe-nodemanager-comet-29-57.sdsc.edu.out
+comet-29-57.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+17/11/28 21:22:10 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/11/28 21:22:11 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+which: no hbase in (/oasis/projects/nsf/uot143/fegaras/apache-hive-2.1.0-bin/bin:/opt/hadoop/2.6.0/sbin:/opt/hadoop/contrib/myHadoop/bin:/opt/hadoop/2.6.0/bin:/opt/gnu/gcc/bin:/opt/gnu/bin:/opt/mvapich2/intel/ib/bin:/opt/intel/composer_xe_2013_sp1.2.144/bin/intel64:/opt/intel/composer_xe_2013_sp1.2.144/mpirt/bin/intel64:/opt/intel/composer_xe_2013_sp1.2.144/debugger/gdb/intel64_mic/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/opt/ibutils/bin:/usr/java/latest/bin:/opt/pdsh/bin:/opt/rocks/bin:/opt/rocks/sbin:/opt/sdsc/bin:/opt/sdsc/sbin:/oasis/projects/nsf/uot143/fegaras/pig-0.16.0/bin:/home/skamthe/bin)
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/oasis/projects/nsf/uot143/fegaras/apache-hive-2.1.0-bin/lib/log4j-slf4j-impl-2.4.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+
+Logging initialized using configuration in jar:file:/oasis/projects/nsf/uot143/fegaras/apache-hive-2.1.0-bin/lib/hive-common-2.1.0.jar!/hive-log4j2.properties Async: true
+OK
+Time taken: 2.146 seconds
+OK
+Time taken: 0.06 seconds
+OK
+Time taken: 0.439 seconds
+OK
+Time taken: 0.033 seconds
+Loading data to table default.m_matrix_table
+OK
+Time taken: 0.928 seconds
+Loading data to table default.n_matrix_table
+OK
+Time taken: 0.142 seconds
+WARNING: Hive-on-MR is deprecated in Hive 2 and may not be available in the future versions. Consider using a different execution engine (i.e. spark, tez) or using Hive 1.X releases.
+Query ID = skamthe_20171128212221_c81268bb-d2d3-40c6-8318-5871a3fd223e
+Total jobs = 2
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/oasis/projects/nsf/uot143/fegaras/apache-hive-2.1.0-bin/lib/log4j-slf4j-impl-2.4.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/opt/hadoop/2.6.0/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.apache.logging.slf4j.Log4jLoggerFactory]
+2017-11-28 21:22:29	Starting to launch local task to process map join;	maximum memory = 514850816
+2017-11-28 21:22:30	Dump the side-table for tag: 0 with group count: 100 into file: file:/tmp/skamthe/7d255d2c-4477-46f2-9dc2-8b1217cc4397/hive_2017-11-28_21-22-24_918_8656874005501303757-1/-local-10006/HashTable-Stage-2/MapJoin-mapfile00--.hashtable
+2017-11-28 21:22:31	Uploaded 1 File to: file:/tmp/skamthe/7d255d2c-4477-46f2-9dc2-8b1217cc4397/hive_2017-11-28_21-22-24_918_8656874005501303757-1/-local-10006/HashTable-Stage-2/MapJoin-mapfile00--.hashtable (73175 bytes)
+2017-11-28 21:22:31	End of local task; Time Taken: 1.081 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 2
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1511932928294_0001, Tracking URL = http://comet-29-55.ibnet:8088/proxy/application_1511932928294_0001/
+Kill Command = /opt/hadoop/2.6.0/bin/hadoop job  -kill job_1511932928294_0001
+Hadoop job information for Stage-2: number of mappers: 1; number of reducers: 1
+2017-11-28 21:22:36,731 Stage-2 map = 0%,  reduce = 0%
+2017-11-28 21:22:42,923 Stage-2 map = 100%,  reduce = 0%, Cumulative CPU 6.95 sec
+2017-11-28 21:22:49,089 Stage-2 map = 100%,  reduce = 100%, Cumulative CPU 10.32 sec
+MapReduce Total cumulative CPU time: 10 seconds 320 msec
+Ended Job = job_1511932928294_0001
+Launching Job 2 out of 2
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1511932928294_0002, Tracking URL = http://comet-29-55.ibnet:8088/proxy/application_1511932928294_0002/
+Kill Command = /opt/hadoop/2.6.0/bin/hadoop job  -kill job_1511932928294_0002
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 1
+2017-11-28 21:22:54,013 Stage-3 map = 0%,  reduce = 0%
+2017-11-28 21:22:59,142 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 1.24 sec
+2017-11-28 21:23:03,238 Stage-3 map = 100%,  reduce = 100%, Cumulative CPU 3.19 sec
+MapReduce Total cumulative CPU time: 3 seconds 190 msec
+Ended Job = job_1511932928294_0002
+MapReduce Jobs Launched: 
+Stage-Stage-2: Map: 1  Reduce: 1   Cumulative CPU: 10.32 sec   HDFS Read: 166107 HDFS Write: 132 SUCCESS
+Stage-Stage-3: Map: 1  Reduce: 1   Cumulative CPU: 3.19 sec   HDFS Read: 6918 HDFS Write: 126 SUCCESS
+Total MapReduce CPU Time Spent: 13 seconds 510 msec
+OK
+59889	-0.06041565604668677
+Time taken: 39.36 seconds, Fetched: 1 row(s)
+stopping yarn daemons
+stopping resourcemanager
+comet-29-55.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-55.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-55.ibnet: stopping nodemanager
+comet-29-55.ibnet: nodemanager did not stop gracefully after 5 seconds: killing with kill -9
+comet-29-57.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-57.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-57.ibnet: stopping nodemanager
+comet-29-57.ibnet: nodemanager did not stop gracefully after 5 seconds: killing with kill -9
+comet-29-56.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-56.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-56.ibnet: stopping nodemanager
+comet-29-56.ibnet: nodemanager did not stop gracefully after 5 seconds: killing with kill -9
+no proxyserver to stop
+17/11/28 21:23:15 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Stopping namenodes on [comet-29-55.ibnet]
+comet-29-55.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-55.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-55.ibnet: stopping namenode
+comet-29-55.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-55.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-55.ibnet: stopping datanode
+comet-29-57.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-57.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-57.ibnet: stopping datanode
+comet-29-56.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-56.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-56.ibnet: stopping datanode
+Stopping secondary namenodes [comet-29-55.ibnet]
+comet-29-55.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-55.ibnet: /home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+comet-29-55.ibnet: stopping secondarynamenode
+17/11/28 21:23:33 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Copying Hadoop logs back to /home/skamthe/cometcluster/logs...
+`/scratch/skamthe/12930841/logs' -> `/home/skamthe/cometcluster/logs'
+`/scratch/skamthe/12930841/logs/yarn-skamthe-resourcemanager-comet-29-55.log' -> `/home/skamthe/cometcluster/logs/yarn-skamthe-resourcemanager-comet-29-55.log'
+`/scratch/skamthe/12930841/logs/hadoop-skamthe-datanode-comet-29-55.sdsc.edu.log' -> `/home/skamthe/cometcluster/logs/hadoop-skamthe-datanode-comet-29-55.sdsc.edu.log'
+`/scratch/skamthe/12930841/logs/hadoop-skamthe-namenode-comet-29-55.sdsc.edu.log' -> `/home/skamthe/cometcluster/logs/hadoop-skamthe-namenode-comet-29-55.sdsc.edu.log'
+`/scratch/skamthe/12930841/logs/hadoop-skamthe-secondarynamenode-comet-29-55.sdsc.edu.log' -> `/home/skamthe/cometcluster/logs/hadoop-skamthe-secondarynamenode-comet-29-55.sdsc.edu.log'
+`/scratch/skamthe/12930841/logs/userlogs' -> `/home/skamthe/cometcluster/logs/userlogs'
+`/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0001' -> `/home/skamthe/cometcluster/logs/userlogs/application_1511932928294_0001'
+`/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0001/container_1511932928294_0001_01_000003' -> `/home/skamthe/cometcluster/logs/userlogs/application_1511932928294_0001/container_1511932928294_0001_01_000003'
+`/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0001/container_1511932928294_0001_01_000003/syslog' -> `/home/skamthe/cometcluster/logs/userlogs/application_1511932928294_0001/container_1511932928294_0001_01_000003/syslog'
+`/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0001/container_1511932928294_0001_01_000003/stdout' -> `/home/skamthe/cometcluster/logs/userlogs/application_1511932928294_0001/container_1511932928294_0001_01_000003/stdout'
+`/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0001/container_1511932928294_0001_01_000003/stderr' -> `/home/skamthe/cometcluster/logs/userlogs/application_1511932928294_0001/container_1511932928294_0001_01_000003/stderr'
+`/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002' -> `/home/skamthe/cometcluster/logs/userlogs/application_1511932928294_0002'
+`/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000001' -> `/home/skamthe/cometcluster/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000001'
+`/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000001/stdout' -> `/home/skamthe/cometcluster/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000001/stdout'
+`/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000001/syslog' -> `/home/skamthe/cometcluster/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000001/syslog'
+`/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000001/stderr' -> `/home/skamthe/cometcluster/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000001/stderr'
+`/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000003' -> `/home/skamthe/cometcluster/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000003'
+`/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000003/syslog' -> `/home/skamthe/cometcluster/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000003/syslog'
+`/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000003/stdout' -> `/home/skamthe/cometcluster/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000003/stdout'
+`/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000003/stderr' -> `/home/skamthe/cometcluster/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000003/stderr'
+`/scratch/skamthe/12930841/logs/yarn-skamthe-nodemanager-comet-29-55.sdsc.edu.log' -> `/home/skamthe/cometcluster/logs/yarn-skamthe-nodemanager-comet-29-55.sdsc.edu.log'
+`/scratch/skamthe/12930841/logs/yarn-skamthe-nodemanager-comet-29-55.sdsc.edu.out' -> `/home/skamthe/cometcluster/logs/yarn-skamthe-nodemanager-comet-29-55.sdsc.edu.out'
+`/scratch/skamthe/12930841/logs/hadoop-skamthe-namenode-comet-29-55.sdsc.edu.out' -> `/home/skamthe/cometcluster/logs/hadoop-skamthe-namenode-comet-29-55.sdsc.edu.out'
+`/scratch/skamthe/12930841/logs/hadoop-skamthe-secondarynamenode-comet-29-55.sdsc.edu.out' -> `/home/skamthe/cometcluster/logs/hadoop-skamthe-secondarynamenode-comet-29-55.sdsc.edu.out'
+`/scratch/skamthe/12930841/logs/yarn-skamthe-resourcemanager-comet-29-55.out' -> `/home/skamthe/cometcluster/logs/yarn-skamthe-resourcemanager-comet-29-55.out'
+`/scratch/skamthe/12930841/logs/SecurityAuth-skamthe.audit' -> `/home/skamthe/cometcluster/logs/SecurityAuth-skamthe.audit'
+`/scratch/skamthe/12930841/logs/hadoop-skamthe-datanode-comet-29-55.sdsc.edu.out' -> `/home/skamthe/cometcluster/logs/hadoop-skamthe-datanode-comet-29-55.sdsc.edu.out'
+/home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/filecache'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/appcache'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/11/reduce.xml'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/11/.tmp_reduce.xml.crc'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/11'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/12/map.xml'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/12/.tmp_map.xml.crc'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/12'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/10/Stage-2.tar.gz/MapJoin-mapfile00--.hashtable'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/10/Stage-2.tar.gz'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/10'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/14/map.xml'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/14/.tmp_map.xml.crc'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/14'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/13/.tmp_reduce.xml.crc'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/13/reduce.xml'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/13'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/nmPrivate'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch'
+removed `/scratch/skamthe/12930841/tmp/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000195'
+removed `/scratch/skamthe/12930841/tmp/dfs/namesecondary/current/fsimage_0000000000000000000.md5'
+removed `/scratch/skamthe/12930841/tmp/dfs/namesecondary/current/fsimage_0000000000000000195'
+removed `/scratch/skamthe/12930841/tmp/dfs/namesecondary/current/fsimage_0000000000000000195.md5'
+removed `/scratch/skamthe/12930841/tmp/dfs/namesecondary/current/fsimage_0000000000000000000'
+removed `/scratch/skamthe/12930841/tmp/dfs/namesecondary/current/VERSION'
+removed directory: `/scratch/skamthe/12930841/tmp/dfs/namesecondary/current'
+removed directory: `/scratch/skamthe/12930841/tmp/dfs/namesecondary'
+removed directory: `/scratch/skamthe/12930841/tmp/dfs'
+removed directory: `/scratch/skamthe/12930841/tmp'
+removed `/scratch/skamthe/12930841/namenode_data/current/fsimage_0000000000000000000'
+removed `/scratch/skamthe/12930841/namenode_data/current/fsimage_0000000000000000195.md5'
+removed `/scratch/skamthe/12930841/namenode_data/current/edits_inprogress_0000000000000000196'
+removed `/scratch/skamthe/12930841/namenode_data/current/VERSION'
+removed `/scratch/skamthe/12930841/namenode_data/current/edits_0000000000000000001-0000000000000000195'
+removed `/scratch/skamthe/12930841/namenode_data/current/fsimage_0000000000000000195'
+removed `/scratch/skamthe/12930841/namenode_data/current/seen_txid'
+removed `/scratch/skamthe/12930841/namenode_data/current/fsimage_0000000000000000000.md5'
+removed directory: `/scratch/skamthe/12930841/namenode_data/current'
+removed directory: `/scratch/skamthe/12930841/namenode_data'
+removed `/scratch/skamthe/12930841/hdfs_data/current/VERSION'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/rbw'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/dfsUsed'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741850_1026.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741849_1025.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741838'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741838_1014.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741851'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741826'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741839_1015.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741851_1027.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741825'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741850'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741849'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741839'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741837'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741837_1013.meta'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/VERSION'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/dncp_block_verification.log.prev'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/tmp'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/dncp_block_verification.log.curr'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current'
+removed directory: `/scratch/skamthe/12930841/hdfs_data'
+removed directory: `/scratch/skamthe/12930841/pids'
+removed `/scratch/skamthe/12930841/logs/yarn-skamthe-resourcemanager-comet-29-55.log'
+removed `/scratch/skamthe/12930841/logs/hadoop-skamthe-datanode-comet-29-55.sdsc.edu.log'
+removed `/scratch/skamthe/12930841/logs/hadoop-skamthe-namenode-comet-29-55.sdsc.edu.log'
+removed `/scratch/skamthe/12930841/logs/hadoop-skamthe-secondarynamenode-comet-29-55.sdsc.edu.log'
+removed `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0001/container_1511932928294_0001_01_000003/syslog'
+removed `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0001/container_1511932928294_0001_01_000003/stdout'
+removed `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0001/container_1511932928294_0001_01_000003/stderr'
+removed directory: `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0001/container_1511932928294_0001_01_000003'
+removed directory: `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0001'
+removed `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000001/stdout'
+removed `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000001/syslog'
+removed `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000001/stderr'
+removed directory: `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000001'
+removed `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000003/syslog'
+removed `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000003/stdout'
+removed `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000003/stderr'
+removed directory: `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000003'
+removed directory: `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002'
+removed directory: `/scratch/skamthe/12930841/logs/userlogs'
+removed `/scratch/skamthe/12930841/logs/yarn-skamthe-nodemanager-comet-29-55.sdsc.edu.log'
+removed `/scratch/skamthe/12930841/logs/yarn-skamthe-nodemanager-comet-29-55.sdsc.edu.out'
+removed `/scratch/skamthe/12930841/logs/hadoop-skamthe-namenode-comet-29-55.sdsc.edu.out'
+removed `/scratch/skamthe/12930841/logs/hadoop-skamthe-secondarynamenode-comet-29-55.sdsc.edu.out'
+removed `/scratch/skamthe/12930841/logs/yarn-skamthe-resourcemanager-comet-29-55.out'
+removed `/scratch/skamthe/12930841/logs/SecurityAuth-skamthe.audit'
+removed `/scratch/skamthe/12930841/logs/hadoop-skamthe-datanode-comet-29-55.sdsc.edu.out'
+removed directory: `/scratch/skamthe/12930841/logs'
+/home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/11/reduce.xml'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/11/.tmp_reduce.xml.crc'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/11'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/12/.tmp_map.xml.crc'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/12/map.xml'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/12'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/10/Stage-2.tar.gz/MapJoin-mapfile00--.hashtable'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/10/Stage-2.tar.gz'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/10'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/appcache'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/nmPrivate'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/filecache'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/dncp_block_verification.log.curr'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/rbw'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/dfsUsed'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/VERSION'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741825'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741851'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741826'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741838'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741837_1013.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741849_1025.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741850_1026.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741837'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741838_1014.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741839_1015.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741839'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741849'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741851_1027.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741850'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/dncp_block_verification.log.prev'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/tmp'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550'
+removed `/scratch/skamthe/12930841/hdfs_data/current/VERSION'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current'
+removed directory: `/scratch/skamthe/12930841/hdfs_data'
+removed directory: `/scratch/skamthe/12930841/pids'
+removed `/scratch/skamthe/12930841/logs/hadoop-skamthe-datanode-comet-29-56.sdsc.edu.log'
+removed `/scratch/skamthe/12930841/logs/yarn-skamthe-nodemanager-comet-29-56.sdsc.edu.log'
+removed `/scratch/skamthe/12930841/logs/yarn-skamthe-nodemanager-comet-29-56.sdsc.edu.out'
+removed `/scratch/skamthe/12930841/logs/hadoop-skamthe-datanode-comet-29-56.sdsc.edu.out'
+removed `/scratch/skamthe/12930841/logs/SecurityAuth-skamthe.audit'
+removed `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0001/container_1511932928294_0001_01_000001/stdout'
+removed `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0001/container_1511932928294_0001_01_000001/syslog'
+removed `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0001/container_1511932928294_0001_01_000001/stderr'
+removed directory: `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0001/container_1511932928294_0001_01_000001'
+removed directory: `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0001'
+removed directory: `/scratch/skamthe/12930841/logs/userlogs'
+removed directory: `/scratch/skamthe/12930841/logs'
+/home/skamthe/.bashrc: line 2: export: `.bashrc': not a valid identifier
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/appcache'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/14/.tmp_map.xml.crc'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/14/map.xml'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/14'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/13/reduce.xml'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/13/.tmp_reduce.xml.crc'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/13'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/10/Stage-2.tar.gz/MapJoin-mapfile00--.hashtable'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/10/Stage-2.tar.gz'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/10'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/12/.tmp_map.xml.crc'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/12/map.xml'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/12'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/11/.tmp_reduce.xml.crc'
+removed `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/11/reduce.xml'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache/11'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe/filecache'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache/skamthe'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/usercache'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/nmPrivate'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch/filecache'
+removed directory: `/scratch/skamthe/12930841/mapred_scratch'
+removed `/scratch/skamthe/12930841/hdfs_data/current/VERSION'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/dncp_block_verification.log.curr'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/tmp'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/dncp_block_verification.log.prev'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741839_1015.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741826_1002.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741851_1027.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741825'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741838'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741849_1025.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741850_1026.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741851'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741826'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741838_1014.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741837'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741825_1001.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741837_1013.meta'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741849'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741850'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0/blk_1073741839'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0/subdir0'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized/subdir0'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/finalized'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/dfsUsed'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/rbw'
+removed `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current/VERSION'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550/current'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current/BP-34630160-198.202.117.240-1511932910550'
+removed directory: `/scratch/skamthe/12930841/hdfs_data/current'
+removed directory: `/scratch/skamthe/12930841/hdfs_data'
+removed directory: `/scratch/skamthe/12930841/pids'
+removed `/scratch/skamthe/12930841/logs/hadoop-skamthe-datanode-comet-29-57.sdsc.edu.out'
+removed `/scratch/skamthe/12930841/logs/yarn-skamthe-nodemanager-comet-29-57.sdsc.edu.out'
+removed `/scratch/skamthe/12930841/logs/SecurityAuth-skamthe.audit'
+removed `/scratch/skamthe/12930841/logs/yarn-skamthe-nodemanager-comet-29-57.sdsc.edu.log'
+removed `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000002/stderr'
+removed `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000002/syslog'
+removed `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000002/stdout'
+removed directory: `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002/container_1511932928294_0002_01_000002'
+removed directory: `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0002'
+removed `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0001/container_1511932928294_0001_01_000002/stdout'
+removed `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0001/container_1511932928294_0001_01_000002/syslog'
+removed `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0001/container_1511932928294_0001_01_000002/stderr'
+removed directory: `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0001/container_1511932928294_0001_01_000002'
+removed directory: `/scratch/skamthe/12930841/logs/userlogs/application_1511932928294_0001'
+removed directory: `/scratch/skamthe/12930841/logs/userlogs'
+removed `/scratch/skamthe/12930841/logs/hadoop-skamthe-datanode-comet-29-57.sdsc.edu.log'
+removed directory: `/scratch/skamthe/12930841/logs'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08_8264958741163392540/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08_8264958741163392540/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08_8264958741163392540'
+removed directory: `/tmp/Jetty_comet.29.55_ibnet_50090_secondary____.gerci8/.active'
+removed directory: `/tmp/Jetty_comet.29.55_ibnet_50090_secondary____.gerci8/jsp'
+removed directory: `/tmp/Jetty_comet.29.55_ibnet_50090_secondary____.gerci8'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_5930762897978746443/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_5930762897978746443/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_5930762897978746443'
